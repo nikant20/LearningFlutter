@@ -28,22 +28,22 @@ class _LoginScreenState extends State<LoginScreen> {
               padding: const EdgeInsets.all(20),
               child: Image.asset("assets/images/png/login.jpg", height: 200,),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, bottom: 10, left: 20, right: 20),
-              child: const Text('Please Login',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.only(top: 20, bottom: 10, left: 20, right: 20),
+              child: Text('Please Login',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20, bottom: 10, top: 10),
-              child: const TextField(
+            const Padding(
+              padding: EdgeInsets.only(left: 20, right: 20, bottom: 10, top: 10),
+              child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter Email',
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20, bottom: 20,right: 20,top: 5),
-              child: const TextField(
+            const Padding(
+              padding: EdgeInsets.only(left: 20, bottom: 20,right: 20,top: 5),
+              child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter Password',
@@ -51,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10),
+              padding: const EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10),
               child: FilledButton.tonal(
 
                   onPressed: () {
@@ -60,7 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: const Text('Click Here Please!')),
             ),
             Padding(
-                padding: EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 10),
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
